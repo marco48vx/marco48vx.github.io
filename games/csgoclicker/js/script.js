@@ -1181,6 +1181,8 @@ var jackpotAI = {
   bot17: ["Platinum (diff7)", 9, "https://i.imgur.com/BzuCWzL.png"],
   bot18: ["sp00ky gh0stman", 9, "https://i.imgur.com/ISxQyow.png"],
   bot19: ["storM", 9, "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e5/e51667b64e8591b8428b4fc268fc826f21a982cf_full.jpg"]
+  bot20: ["Owen Poteat", 9, "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e5/e51667b64e8591b8428b4fc268fc826f21a982cf_full.jpg"]
+  bot21: ["Levi Richardson", 9, "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e5/e51667b64e8591b8428b4fc268fc826f21a982cf_full.jpg"]
 };
 
 var jackpotPots = {
