@@ -6,7 +6,7 @@ var fps = 60;
 
 var money = 7.50;
 var currentCase = "case2";
-var acceptMoneyPerClick = 22;
+var acceptMoneyPerClick = 1.0;
 
 
 
@@ -22,7 +22,7 @@ var popup = false;
 var inventory = {};
 var jackpotInventory = {};
 
-var inventoryMax = 50;
+var inventoryMax = 75;
 var inventoryCurrent = 0;
 
 var keyPrice = 2.50;
@@ -1052,10 +1052,10 @@ $(".caseContainer").on('click', '.case', function() {
 var jackpotUnlocked = true;
 var jackpotInProgress = false;
 var swapSkins = 0;
-var maxSwapSkins = 7;
+var maxSwapSkins = 20;
 var swapSkinsValue = 0;
 var jackpotSelectedInventory = {};
-var jackpotDifficulty = "low";
+var jackpotDifficulty = "high";
 
 $(".jackpotRightPlayer").on("click", ".inventorySwapItem", function() {
   if (inventoryCurrent <= inventoryMax) {
@@ -1180,15 +1180,20 @@ var jackpotAI = {
   bot16: ["Jainxu", 9, "https://i.imgur.com/nwEsAGH.png"],
   bot17: ["Platinum (diff7)", 9, "https://i.imgur.com/BzuCWzL.png"],
   bot18: ["sp00ky gh0stman", 9, "https://i.imgur.com/ISxQyow.png"],
-  bot19: ["storM", 9, "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e5/e51667b64e8591b8428b4fc268fc826f21a982cf_full.jpg"]
-  bot20: ["Owen Poteat", 9, "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e5/e51667b64e8591b8428b4fc268fc826f21a982cf_full.jpg"]
-  bot21: ["Levi Richardson", 9, "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e5/e51667b64e8591b8428b4fc268fc826f21a982cf_full.jpg"]
+  bot19: ["storM", 9, "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e5/e51667b64e8591b8428b4fc268fc826f21a982cf_full.jpg"],
+  bot20: ["Owen Poteat", 9, "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e5/e51667b64e8591b8428b4fc268fc826f21a982cf_full.jpg"],
+  bot21: ["Levi Richardson", 9, "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e5/e51667b64e8591b8428b4fc268fc826f21a982cf_full.jpg"],
+  bot22: ["GYATTmaster", 9, "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e5/e51667b64e8591b8428b4fc268fc826f21a982cf_full.jpg"],
+  bot23: ["Noah Farton", 9, "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e5/e51667b64e8591b8428b4fc268fc826f21a982cf_full.jpg"],
+  bot24: ["brainrot69", 9, "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e5/e51667b64e8591b8428b4fc268fc826f21a982cf_full.jpg"],
+  bot25: ["only-knives", 9, "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e5/e51667b64e8591b8428b4fc268fc826f21a982cf_full.jpg"],
+  bot26: ["abcdefghijklmnopqrstuvwxyz", 9, "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e5/e51667b64e8591b8428b4fc268fc826f21a982cf_full.jpg"]
 };
 
 var jackpotPots = {
   low: ["bot1", "bot2", "bot3", "bot4", "bot5", "bot6", "bot7", "bot8", "bot9"],
   medium: ["bot7", "bot8", "bot9", "bot10", "bot11", "bot12", "bot13", "bot14"],
-  high: ["bot14", "bot15", "bot16", "bot17", "bot18", "bot19"]
+  high: ["bot14", "bot15", "bot16", "bot17", "bot18", "bot19", "bot20", "bot21", "bot22", "bot23", "bot24", "bot25", "bot26"]
 }
 
 
@@ -1259,7 +1264,7 @@ function jackpotStart() {
   var playerTickets = 0;
   var totalTickets = 0;
   var jackpotItemCounter = 0;
-  var jackpotTimerCounter = 25;
+  var jackpotTimerCounter = 20;
   var depositTicker = 0;
   var AIKeys = JSON.parse(JSON.stringify(jackpotPots[jackpotDifficulty]));
 
