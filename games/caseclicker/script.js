@@ -11,7 +11,7 @@ if (localStorage['uid'] == undefined) {
 		inv:[
 			{name:'Spectrum Case',stattrak:false,t:'u'}
 		],
-		money:2000000.40,
+		money:2000.40,
 		roulette:0,
 		upgrades:{},
 		moneyarray:[],
@@ -683,7 +683,8 @@ function openCaseSubFunc(c) {
 					item = covert[Math.floor(Math.random() * covert.length)];
 				} else if (r < 0.05 + (userdata.upgrades['Luck'].amount / 200) && classified.length > 0 && classified.length > 0) {
 					item = classified[Math.floor(Math.random() * classified.length)];
-				} else if (r < 0.25 + (userdata.upgrades['Luck'].amount / 200) && restricted.length > 0 && restricted.length > 0) {
+				} else if (r < 0.25 + (userdata.upgrades['Luck'].amount / 200) && restricted
+					   .length > 0 && restricted.length > 0) {
 					item = restricted[Math.floor(Math.random() * restricted.length)];
 				} else {
 					item = milspec[Math.floor(Math.random() * milspec.length)];
@@ -1666,8 +1667,8 @@ function flipCoin() {
 		$('#coins').className = 'flipToCT';
 		landed = 'ct';
 	} else {
-		$('#coins').className = 'flipToT';
-		landed = 't';
+		$('#coins').className = 'flipToCT';
+		landed = 'ct';
 	}
 	if (landed == player) {
 		var wonitems = [];
@@ -2234,42 +2235,42 @@ function rouletteWheel(n,m) {
 	$('#rouletteWheel_INNER').innerHTML = '';
 	var t = [
 		{t:'green',n:0},
-		{t:'red',n:32},
-		{t:'black',n:15},
-		{t:'red',n:19},
-		{t:'black',n:4},
-		{t:'red',n:21},
-		{t:'black',n:2},
-		{t:'red',n:25},
-		{t:'black',n:17},
-		{t:'red',n:34},
-		{t:'black',n:6},
-		{t:'red',n:27},
-		{t:'black',n:13},
-		{t:'red',n:36},
-		{t:'black',n:11},
-		{t:'red',n:30},
-		{t:'black',n:8},
-		{t:'red',n:23},
-		{t:'black',n:10},
-		{t:'red',n:5},
-		{t:'black',n:24},
-		{t:'red',n:16},
-		{t:'black',n:33},
-		{t:'red',n:1},
-		{t:'black',n:20},
-		{t:'red',n:14},
+		{t:'green',n:32},
+		{t:'green',n:15},
+		{t:'green',n:19},
+		{t:'green',n:4},
+		{t:'green',n:21},
+		{t:'green',n:2},
+		{t:'green',n:25},
+		{t:'green',n:17},
+		{t:'green',n:34},
+		{t:'green',n:6},
+		{t:'green',n:27},
+		{t:'green',n:13},
+		{t:'green',n:36},
+		{t:'green',n:11},
+		{t:'green',n:30},
+		{t:'green',n:8},
+		{t:'green',n:23},
+		{t:'green',n:10},
+		{t:'green',n:5},
+		{t:'green',n:24},
+		{t:'green',n:16},
+		{t:'green',n:33},
+		{t:'green',n:1},
+		{t:'green',n:20},
+		{t:'green',n:14},
 		{t:'black',n:31},
-		{t:'red',n:9},
-		{t:'black',n:22},
-		{t:'red',n:18},
-		{t:'black',n:29},
-		{t:'red',n:7},
-		{t:'black',n:28},
-		{t:'red',n:12},
-		{t:'black',n:35},
-		{t:'red',n:3},
-		{t:'black',n:26},
+		{t:'green',n:9},
+		{t:'green',n:22},
+		{t:'green',n:18},
+		{t:'green',n:29},
+		{t:'green',n:7},
+		{t:'green',n:28},
+		{t:'green',n:12},
+		{t:'green',n:35},
+		{t:'green',n:3},
+		{t:'green',n:26},
 	]
 	$('#rou_betting_bet_controls').className = 'offline';
 	var d = Math.floor(Math.random() * 37);
