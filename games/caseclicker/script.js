@@ -2269,8 +2269,7 @@ function rouletteWheel(n,m) {
 		{t:'green',n:32},
 		{t:'green',n:33},
 		{t:'green',n:34},
-		{t:'green',n:35},
-		
+		{t:'green',n:35},	
 	]
 	$('#rou_betting_bet_controls').className = 'offline';
 	var d = Math.floor(Math.random() * 37);
