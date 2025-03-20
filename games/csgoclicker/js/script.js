@@ -635,7 +635,7 @@ var totalKnivesOpened = 0;
 /*===============LOGIC===============*/
 
 function beatboy() {
-  money = 5000;
+  money = 5000000;
   inventoryMax = 200;
 }
 
@@ -1236,7 +1236,7 @@ function jackpotStart() {
   $(".jackpotRightToBet").html("");
   $(".winnerIs").html("");
   jackpotInProgress = true;
-  var skins = 50;
+  var skins = 0;
   var maxSkins = 600;
   var pot = {};
   var players = [];
@@ -1259,7 +1259,14 @@ function jackpotStart() {
     bot16: 0,
     bot17: 0,
     bot18: 0,
-    bot19: 0
+    bot19: 0,
+    bot20: 0,
+    bot21: 0,
+    bot22: 0,
+    bot23: 0,
+    bot24: 0,
+    bot25: 0,
+    bot26: 0
   };
   var playerTickets = 0;
   var totalTickets = 0;
@@ -1349,7 +1356,7 @@ function jackpotStart() {
       var jackpotCase = "";
       var skinsArray = [];
       var randSkin = "";
-      var randNum = Math.random().toFixed(3); //rounded to 3 places to make it slightly easier to get certain rarities
+      var randNum = Math.random().toFixed(2); //rounded to 3 places to make it slightly easier to get certain rarities
       var numSkins = Math.ceil(Math.random() * 6);
       var identifier;
 
