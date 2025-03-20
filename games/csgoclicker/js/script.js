@@ -635,7 +635,7 @@ var totalKnivesOpened = 0;
 /*===============LOGIC===============*/
 
 function beatboy() {
-  money = 5000000;
+  money = 5000;
   inventoryMax = 200;
 }
 
@@ -1055,7 +1055,7 @@ var swapSkins = 0;
 var maxSwapSkins = 20;
 var swapSkinsValue = 0;
 var jackpotSelectedInventory = {};
-var jackpotDifficulty = "high";
+var jackpotDifficulty = "low";
 
 $(".jackpotRightPlayer").on("click", ".inventorySwapItem", function() {
   if (inventoryCurrent <= inventoryMax) {
@@ -1403,21 +1403,24 @@ function jackpotStart() {
           //drawItem(itemDisp(identifier.name, identifier.price, identifier.img), rarity);
           drawBotItem(itemDisp(identifier.name, identifier.price, identifier.img), rarity);
         } else {
+          //var knifeCase = Object.keys(knives)[Math.floor(Math.random() * Object.keys(knives).length)];
+          var enabledKnives = ["regular", "chroma", "falchion"];
+          var knifeCase = enabledKnives[Math.floor(Math.random() * enabledKnives.length)];
 
-          skinsArray = Object.keys(cases[jackpotCase][rarity]);
+          skinsArray = Object.keys(knives[knifeCase]);
           randSkin = skinsArray[Math.floor(skinsArray.length * Math.random())];
-          identifier = cases[jackpotCase][rarity][randSkin];
+          identifier = knives[knifeCase][randSkin];
 
+          //console.log(identifier.name);
+          //console.log(identifier.price * 100);
           botTickets[randomBot] += Math.round(identifier.price * 100);
           totalTickets += Math.round(identifier.price * 100);
-
-          var toEncode = "cases['" + jackpotCase + "']" + "['" + rarity + "']" + "['" + randSkin + "']";
+          var toEncode = "knives['" + knifeCase + "']" + "['" + randSkin + "']";
           //console.log(toEncode);
           pot["item" + itemCounter] = window.btoa(toEncode);
-          //console.log(cases[currentCase][rarity][randSkin]);
 
+          //drawItem(itemDisp(identifier.name, identifier.price, identifier.img), rarity);
           drawBotItem(itemDisp(identifier.name, identifier.price, identifier.img), rarity);
-
         }
         skins += 1;
         jackpotItemCounter += 1;
