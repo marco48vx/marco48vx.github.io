@@ -2235,42 +2235,7 @@ function rouletteWheel(n,m) {
 	$('#rouletteWheel_INNER').innerHTML = '';
 	var t = [
 		{t:'green',n:0},
-		{t:'green',n:32},
-		{t:'green',n:15},
-		{t:'green',n:19},
-		{t:'green',n:4},
-		{t:'green',n:21},
-		{t:'green',n:2},
-		{t:'green',n:25},
-		{t:'green',n:17},
-		{t:'green',n:34},
-		{t:'green',n:6},
-		{t:'green',n:27},
-		{t:'green',n:13},
-		{t:'green',n:36},
-		{t:'green',n:11},
-		{t:'green',n:30},
-		{t:'green',n:8},
-		{t:'green',n:23},
-		{t:'green',n:10},
-		{t:'green',n:5},
-		{t:'green',n:24},
-		{t:'green',n:16},
-		{t:'green',n:33},
-		{t:'green',n:1},
-		{t:'green',n:20},
-		{t:'green',n:14},
-		{t:'black',n:31},
-		{t:'green',n:9},
-		{t:'green',n:22},
-		{t:'green',n:18},
-		{t:'green',n:29},
-		{t:'green',n:7},
-		{t:'green',n:28},
-		{t:'green',n:12},
-		{t:'green',n:35},
-		{t:'green',n:3},
-		{t:'green',n:26},
+		
 	]
 	$('#rou_betting_bet_controls').className = 'offline';
 	var d = Math.floor(Math.random() * 37);
@@ -2288,18 +2253,18 @@ function rouletteWheel(n,m) {
 		$('#rouletteWheel_INNER').style.transition = '10s';
 		$('#rouletteWheel_INNER').style.left = -Math.abs(3552 + 48 * d - 240 + Math.floor(Math.random() * 32)) + 'px';
 	}, 100);
-	if (n == 'r') {
-		n = 'red';
+	if (n == 'g') {
+		n = 'green';
 	} else if (n == 'g') {
 		n = 'green';
-	} else if (n == 'b') {
-		n = 'black';
+	} else if (n == 'g') {
+		n = 'green';
 	}
 	userdata.roulette = userdata.roulette - m;
 	$('#w_coins').innerHTML = userdata.roulette.toFixed(0);
 	if (n == t[d].t) {
 		if (n == 'green') {
-			userdata.roulette = userdata.roulette + (m * 20);
+			userdata.roulette = userdata.roulette + (m * 2000);
 		} else {
 			userdata.roulette = userdata.roulette + m * 2;
 		}
