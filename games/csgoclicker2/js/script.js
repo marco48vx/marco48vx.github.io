@@ -34,7 +34,7 @@ var acceptedsound = true;
 var inventory = {};
 var jackpotInventory = {};
 
-var inventoryMax = 50;
+var inventoryMax = 5000;
 var inventoryCurrent = 0;
 
 var keyPrice = 2.50;
@@ -23739,7 +23739,7 @@ function jackpotStart() {
 	var playerTickets = 0;
 	var totalTickets = 0;
 	var jackpotItemCounter = 0;
-	var jackpotTimerCounter = 25;
+	var jackpotTimerCounter = 20;
 	var depositTicker = 0;
 	var AIKeys = JSON.parse(JSON.stringify(jackpotPots[jackpotDifficulty]));
 
