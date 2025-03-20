@@ -2235,6 +2235,16 @@ function rouletteWheel(n,m) {
 	$('#rouletteWheel_INNER').innerHTML = '';
 	var t = [
 		{t:'green',n:0},
+		{t:'green',n:1},
+		{t:'green',n:2},
+		{t:'green',n:3},
+		{t:'green',n:4},
+		{t:'green',n:5},
+		{t:'green',n:6},
+		{t:'green',n:7},
+		{t:'green',n:8},
+		{t:'green',n:9},
+		{t:'green',n:10},
 		
 	]
 	$('#rou_betting_bet_controls').className = 'offline';
