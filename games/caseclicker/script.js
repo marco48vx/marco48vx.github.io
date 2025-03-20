@@ -1738,7 +1738,7 @@ $('#coin_t').addEventListener('click', function() {
 
 var jackpotFunc = document.getElementsByClassName('jackpot_func');
 var jp_type = '';
-var jp_betTypes = {low:1000,high:10000}
+var jp_betTypes = {low:1000,high:100000000}
 
 for (var i = 0; i < jackpotFunc.length; i++) {
 	jackpotFunc[i].addEventListener('click', function() {
