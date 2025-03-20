@@ -23589,11 +23589,11 @@ var jackpotAI = {
 	bot23: ["Doge", 8, "https://i.gyazo.com/c69e8efdccc0c9a03f69df5206a57d21.png"],
 	bot24: ["MyBack", 8, "https://i.imgur.com/sDpf0y3.jpg"],
 	bot25: ["Skittle", 8, "https://i.imgur.com/Zi9J6CJ.jpg"],
-	bot26: ["SirRazor", 8, "https://i.imgur.com/4WA3vTU.jpg"],
-	bot27: ["DennyB", 8, "https://i.imgur.com/VNE57CT.jpg"],
-	bot28: ["Bio", 8, "https://i.imgur.com/acTRiBk.jpg"],
-	bot29: ["Tiny", 8, "https://i.imgur.com/2aOas2H.jpg"],
-	bot30: ["Toshiyuki", 8, "https://i.imgur.com/rNszEvF.jpg"],
+	bot26: ["SirRazor", 9, "https://i.imgur.com/4WA3vTU.jpg"],
+	bot27: ["DennyB", 9, "https://i.imgur.com/VNE57CT.jpg"],
+	bot28: ["Bio", 9, "https://i.imgur.com/acTRiBk.jpg"],
+	bot29: ["Tiny", 9, "https://i.imgur.com/2aOas2H.jpg"],
+	bot30: ["Toshiyuki", 9, "https://i.imgur.com/rNszEvF.jpg"],
 	bot31: ["King of KFC Jamal", 9, "https://i.imgur.com/XhFlH2S.jpg"]
 };
 
@@ -23739,7 +23739,7 @@ function jackpotStart() {
 	var playerTickets = 0;
 	var totalTickets = 0;
 	var jackpotItemCounter = 0;
-	var jackpotTimerCounter = 60;
+	var jackpotTimerCounter = 25;
 	var depositTicker = 0;
 	var AIKeys = JSON.parse(JSON.stringify(jackpotPots[jackpotDifficulty]));
 
