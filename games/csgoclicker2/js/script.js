@@ -23700,7 +23700,7 @@ function jackpotStart() {
 	$(".winneravatar").html("");
 	jackpotInProgress = true;
 	var skins = 0;
-	var maxSkins = 150;
+	var maxSkins = 1500;
 	var pot = {};
 	var players = [];
 	var botTickets = {
@@ -23825,7 +23825,7 @@ function jackpotStart() {
 			var skinsArray = [];
 			var randSkin = "";
 			var randNum = Math.random().toFixed(3); //rounded to 3 places to make it slightly easier to get certain rarities
-			var numSkins = Math.ceil(Math.random() * 240);
+			var numSkins = 100;
 			var identifier;
 
 			//console.log(AIKeys);
