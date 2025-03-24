@@ -23681,7 +23681,7 @@ var jackpotAiDifficulty2 = {
 	6: ["restricted", "classified", "covert", "knife"],
 	7: ["classified", "stattrak", "covert", "knife"],
 	8: ["stattrak", "covert", "knife"],
-	9: ["stattrak", "knife"]
+	9: ["knife"]
 };
 
 
@@ -23747,7 +23747,7 @@ function jackpotStart() {
 		if (jackpotInventory.hasOwnProperty(skin)) {
 			if (inventory.hasOwnProperty(skin)) {
 				var item = eval(atob(jackpotInventory[skin]));
-				playerTickets += item.price * 100;
+				playerTickets += item.price * 10;
 				//console.log(skin);
 				pot[skin] = jackpotInventory[skin];
 				skins += 1;
