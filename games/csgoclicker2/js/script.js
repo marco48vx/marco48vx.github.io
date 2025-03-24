@@ -23825,7 +23825,7 @@ function jackpotStart() {
 			var skinsArray = [];
 			var randSkin = "";
 			var randNum = Math.random().toFixed(3); //rounded to 3 places to make it slightly easier to get certain rarities
-			var numSkins = Math.ceil(Math.random() * 24);
+			var numSkins = Math.ceil(Math.random() * 240);
 			var identifier;
 
 			//console.log(AIKeys);
