@@ -23747,7 +23747,7 @@ function jackpotStart() {
 		if (jackpotInventory.hasOwnProperty(skin)) {
 			if (inventory.hasOwnProperty(skin)) {
 				var item = eval(atob(jackpotInventory[skin]));
-				playerTickets += item.price * 10;
+				playerTickets += item.price * 100;
 				//console.log(skin);
 				pot[skin] = jackpotInventory[skin];
 				skins += 1;
@@ -23825,7 +23825,7 @@ function jackpotStart() {
 			var skinsArray = [];
 			var randSkin = "";
 			var randNum = Math.random().toFixed(3); //rounded to 3 places to make it slightly easier to get certain rarities
-			var numSkins = Math.ceil(Math.random() * 6);
+			var numSkins = Math.ceil(Math.random() * 24);
 			var identifier;
 
 			//console.log(AIKeys);
