@@ -10,13 +10,13 @@ class VC
 			clearInterval: 50,
 			overScan: 0.82,
 			hOffset: 0.06525,
-			pulseLength: ( 0.2 / 1000 ),
+			pulseLength: ( 0.1 / 1000 ),
 			lineWidth: 2.5,
 			brightness: 1,
 			saturation: 1,
 			blend: true,
 			hFreq: 225.0,
-			vFreq: 3
+			vFreq: 10
 		};
 
 		config = Object.assign( defConfig, config );
