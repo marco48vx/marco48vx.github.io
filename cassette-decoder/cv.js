@@ -16,7 +16,7 @@ class VC
 			saturation: 1,
 			blend: true,
 			hFreq: 225.0,
-			vFreq: 10
+			vFreq: 15
 		};
 
 		config = Object.assign( defConfig, config );
