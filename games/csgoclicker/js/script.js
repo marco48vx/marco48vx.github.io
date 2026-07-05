@@ -1051,7 +1051,7 @@ $(".caseContainer").on('click', '.case', function() {
 /*===============JACKPOT===============*/
 var jackpotUnlocked = true;
 var jackpotInProgress = false;
-var swapSkins = 0;
+var swapSkins = 50;
 var maxSwapSkins = 7000;
 var swapSkinsValue = 0;
 var jackpotSelectedInventory = {};
