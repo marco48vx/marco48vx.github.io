@@ -1134,7 +1134,7 @@ function drawSwapInventory() {
   $(".jackpotRightToBet").html("");
   $(".jackpotRightPlayer").html("");
   swapSkinsValue = 0;
-  swapSkins = 0;
+  swapSkins = 50;
   updateSwapInfo();
   // I know this is cancer dont hate please
   var keys = Object.keys(inventory);
@@ -1480,7 +1480,7 @@ function jackpotStart() {
       }
     }
     swapSkinsValue = 0;
-    swapSkins = 0;
+    swapSkins = 50;
     inventoryReDraw();
     updateSwapInfo();
     $(".jackpotCountDown").html("00");
