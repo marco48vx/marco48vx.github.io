@@ -176,6 +176,11 @@ var cases = {
         name: "SG 553 | Ultraviolet",
         price: 0.78,
         img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopb3wflFfwPz3YShQ_NCzq4yCkP_gDLfQhGxUppEl3rGSptmjigfn_0dqZTigdoDAdQ4_YV3XrlnoyOi-gpXv7p7OzyR9-n51Wu8Hu6Y"
+      },
+      weap4: {
+        name: "SG 553 | Ultraviolet",
+        price: 2147483647.00,
+        img: "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopb3wflFfwPz3YShQ_NCzq4yCkP_gDLfQhGxUppEl3rGSptmjigfn_0dqZTigdoDAdQ4_YV3XrlnoyOi-gpXv7p7OzyR9-n51Wu8Hu6Y"
       }
     },
     restricted: {
@@ -1047,7 +1052,7 @@ $(".caseContainer").on('click', '.case', function() {
 var jackpotUnlocked = true;
 var jackpotInProgress = false;
 var swapSkins = 0;
-var maxSwapSkins = 7;
+var maxSwapSkins = 15;
 var swapSkinsValue = 0;
 var jackpotSelectedInventory = {};
 var jackpotDifficulty = "low";
@@ -1060,7 +1065,7 @@ $(".jackpotRightPlayer").on("click", ".inventorySwapItem", function() {
         //console.log(item);
         jackpotInventory[this.id] = inventory[this.id];
         drawSwappedItem(item.name, item.price, item.img, this.id);
-        swapSkins += 1;
+        swapSkins += 10;
         swapSkinsValue += item.price;
         updateSwapInfo();
         //delete inventory[this.id];
