@@ -1,4 +1,4 @@
-// CSGOClicker - Case CSGOClicker
+// CSGOClicker - Case CSGOClickerr
 //money, inventory, jackpot
 (function() {
 var itemCounter = 0;
