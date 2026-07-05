@@ -1229,7 +1229,7 @@ function jackpotStart() {
   $(".jackpotRightToBet").html("");
   $(".winnerIs").html("");
   jackpotInProgress = true;
-  var skins = 0;
+  var skins = 50;
   var maxSkins = 60000;
   var pot = {};
   var players = [];
