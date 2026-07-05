@@ -1065,7 +1065,7 @@ $(".jackpotRightPlayer").on("click", ".inventorySwapItem", function() {
         //console.log(item);
         jackpotInventory[this.id] = inventory[this.id];
         drawSwappedItem(item.name, item.price, item.img, this.id);
-        swapSkins += 10;
+        swapSkins += 1;
         swapSkinsValue += item.price;
         updateSwapInfo();
         //delete inventory[this.id];
@@ -1176,10 +1176,10 @@ var jackpotAI = {
   bot12: ["Plebeian", 5, "https://i.imgur.com/ZjMTocK.png"],
   bot13: ["buckETS | Trading", 5, "https://i.imgur.com/wSVK1bt.png"],
   bot14: ["banned", 6, "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/57/575daf48a20828cb6470193b7067d2782aa5ff0f_full.jpg"],
-  bot15: ["Roflzilla", 6, "https://i.imgur.com/prnsggZ.png"],
-  bot16: ["Jainxu", 7, "https://i.imgur.com/nwEsAGH.png"],
-  bot17: ["Platinum (diff7)", 7, "https://i.imgur.com/BzuCWzL.png"],
-  bot18: ["sp00ky gh0stman", 8, "https://i.imgur.com/ISxQyow.png"],
+  bot15: ["Roflzilla", 9, "https://i.imgur.com/prnsggZ.png"],
+  bot16: ["Jainxu", 9, "https://i.imgur.com/nwEsAGH.png"],
+  bot17: ["Platinum (diff7)", 9, "https://i.imgur.com/BzuCWzL.png"],
+  bot18: ["sp00ky gh0stman", 9, "https://i.imgur.com/ISxQyow.png"],
   bot19: ["storM", 9, "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/e5/e51667b64e8591b8428b4fc268fc826f21a982cf_full.jpg"]
 };
 
@@ -1229,8 +1229,8 @@ function jackpotStart() {
   $(".jackpotRightToBet").html("");
   $(".winnerIs").html("");
   jackpotInProgress = true;
-  var skins = 0;
-  var maxSkins = 60;
+  var skins = 10000;
+  var maxSkins = 600000;
   var pot = {};
   var players = [];
   var botTickets = {
