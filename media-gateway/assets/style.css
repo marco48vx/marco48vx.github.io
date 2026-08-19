@@ -1,0 +1,125 @@
+:root {
+  color-scheme: dark;
+  --bg: #0f1115;
+  --panel: #171a21;
+  --line: #272c36;
+  --text: #e8eaf0;
+  --muted: #97a0b0;
+  --accent: #4d8dff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 560px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 32px;
+}
+
+h1 { margin: 0 0 6px; font-size: 24px; }
+.sub { margin: 0 0 22px; color: var(--muted); font-size: 14px; }
+
+form, .row { display: flex; gap: 10px; }
+form { flex-wrap: wrap; }
+
+input[type="text"] {
+  flex: 1 1 260px;
+  min-width: 0;
+  padding: 11px 13px;
+  border-radius: 9px;
+  border: 1px solid var(--line);
+  background: #0c0e12;
+  color: var(--text);
+  font-size: 14px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+button {
+  padding: 11px 18px;
+  border: 0;
+  border-radius: 9px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover { filter: brightness(1.08); }
+
+.error {
+  margin: 16px 0 0;
+  color: #ff8080;
+  font-size: 14px;
+}
+
+.result { margin-top: 24px; }
+.result label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.open {
+  display: inline-block;
+  margin-top: 14px;
+  color: var(--accent);
+  font-size: 14px;
+}
+
+.player-body { align-items: flex-start; }
+
+.player-wrap {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.stage iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.back {
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.back:hover { color: var(--text); }
